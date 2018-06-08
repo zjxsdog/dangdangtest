@@ -1,0 +1,218 @@
+@charset "utf-8";
+@import "_header.scss";
+.main {
+    background: url(../img/dang_bg-1527592840.png) no-repeat center top;
+    .wrapper {
+        margin: 0 auto;
+        width: $wrapper;
+        overflow:hidden;
+    }
+    .main_head_left {
+        width: 200px;
+        background: #fff;
+        position: relative;
+        float:left;
+    }
+    .list_content {
+        padding: 4px 0;
+        .list_content_sort {
+            position: relative;
+            padding-left: 18px;
+            height: 30px;
+            font: 14px/30px "微软雅黑";
+            a:hover {
+                text-decoration: underline;
+            }
+        } // li:nth-of-type(2){
+        // 	border:2px solid #f00;
+        // 	border-right:none;
+        // 	z-index:10;
+        // 	background:#fff;
+        // }//该效果用js实现：增加选中框的的层级，使其背景色覆盖.list_detail边框
+    }
+    .list_detail {
+        position: absolute;
+        left: 198px;
+        top: 0px;
+        width: 979px;
+        background: #fff;
+        padding-left: 18px;
+        border: 2px solid #ff2832;
+        font-size: 12px;
+        display: none; //二级导航隐藏
+        a:hover {
+            text-decoration: underline;
+        }
+    }
+    .nav_list {
+        padding-top: 10px;
+        overflow: hidden;
+        a {
+            position: relative;
+            float: left;
+            padding: 0 28px 0 8px;
+            height: 20px;
+            line-height: 20px;
+            background: #a2a2a2;
+            margin-right: 10px;
+        }
+        span {
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 20px;
+            height: 20px;
+            background: url(../img/home_sprite_1511.png) no-repeat -72px -146px;
+        }
+    }
+    .rank_list {
+        margin: 15px 0px 8px;
+        position: relative;
+        h4 {
+            color: #ff2832;
+        }
+        .rank_list_sort {
+            position: absolute;
+            height: 22px;
+            padding-bottom: 5px;
+            left: 80px;
+            top: -1px;
+            a {
+                font-size: 13px;
+                margin-right: 10px;
+            }
+        }
+    }
+    .list_sort {
+        li {
+            position: relative;
+            height: 22px;
+            margin-left: 70px;
+            padding: 7px 0 5px;
+            line-height: 22px;
+            border-top: 1px dotted #d5d5d5;
+            h4 {
+                position: absolute;
+                left: -70px;
+                color: #ff2832
+            }
+            div {
+                height: 100%;
+                margin-left: 1px;
+                overflow: hidden;
+                a {
+                    float: left;
+                    height: 100%;
+                    padding: 0 10px;
+                    background: url(../img/home_sprite_1511.png) no-repeat left -30px;
+                    margin-left: -1px;
+                }
+            }
+        }
+    }
+    .main_head_middle{
+    	float:left;
+    }
+    .lbbox {
+        
+        width: 796px;
+        height: 487px;
+        border-right: 1px solid #f00;
+        border-bottom: 1px solid #f00;
+        position: relative;
+    }
+    .lbbox .bigpic {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 796px;
+        height: 326px;
+    }
+    .lbbox .bigpic li {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 796px;
+        height: 326px;
+    }
+    .lbbox .bigpic li img {
+        opacity: 0;
+        z-index: 1;
+    }
+    .lbbox .spic {
+        position: absolute;
+        top: 326px;
+        width: 796px;
+        height: 160px;
+    }
+    .lbbox .spic li {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        opacity: 0;
+    }
+    .lbbox .spic li a {
+        float: left;
+        display: block;
+        border-right: 1px solid #ccc;
+        height: 161px;
+    }
+    .lbbox ol {
+        position: absolute;
+        left: 50%;
+        margin-left: -104px;
+        top: 300px;
+    }
+    .lbbox ol li {
+        float: left;
+        width: 20px;
+        height: 20px;
+        margin-right: 6px;
+        background-color: #646464;
+        text-align: center;
+        line-height: 20px;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+    .lbbox .bleft,
+    .bright {
+        position: absolute;
+        top: 50%;
+        margin-top: -35px;
+        width: 33px;
+        height: 70px;
+        font-size: 36px;
+        line-height: 70px;
+        color: #fff;
+        background-color: rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+    }
+    .lbbox .bleft {
+        left: -40px;
+    }
+    .lbbox .bright {
+        left: 803px;
+    }
+    .lbbox .sleft,
+    .sright {
+        position: absolute;
+        top: 50%;
+        margin-top: -21px;
+        width: 30px;
+        height: 43px;
+        font-size: 30px;
+        line-height: 43px;
+        color: #fff;
+        background-color: rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+    }
+    .lbbox .sleft {
+        left: -40px;
+    }
+    .lbbox .sright {
+        left: 803px;
+    }
+    .lbbox ol .active {
+        background-color: #f00;
+    }
+}

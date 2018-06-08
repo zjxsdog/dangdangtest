@@ -1,0 +1,245 @@
+$wrapper:1200px;
+body {
+    font-size: 14px;
+    font-family:Arial;
+    color:#404040;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+a:hover{
+	color:#f00;
+}
+strong,em,b,i{
+	font-weight:normal;
+	font-style:normal;
+}
+.header {
+    width: 100%;
+	font-size:13px;
+    .tools {
+        background: #f9f9f9;
+        .wrapper {
+            margin: 0 auto;
+            width: $wrapper;
+            height:34px;
+        }
+    }
+    .area {
+        display: inline-block;
+        padding-top:2px;
+        width:85px;
+        height:26px;
+        line-height: 34px;
+        background: url(../img/head_sprite.png) no-repeat -10px -299px;
+        cursor:pointer;
+        a{
+        	padding-top:4px;
+        	height:22px;
+        }
+        a:hover{
+        	color:#404040;
+        }
+    }
+    .welcome{
+    	display:inline-block;
+    	margin-left:310px;
+    	color:#646464;
+    	strong{
+    		cursor:pointer;
+    		color:red;
+    	}
+    	em{
+    		cursor:pointer;
+    	}
+    	em:hover{
+    		color:red;
+    	}
+    }
+    .head_tools_nav{
+    	float:right;
+    	padding-top:2px;
+    	height:28px;
+ 		over-flow:hidden;
+    	li{
+    		float:left;
+    		padding-top:4px;
+    		height:24px;
+    		background: url(../img/head_sprite.png) no-repeat left -286px;
+    		a{
+    			display:inline-block;
+    			height:21px;
+    			padding:0 7px 0 8px;
+    			line-height:21px;
+    		}
+    		span{
+    			float:left;
+    			margin-right:5px;
+    		}
+    	}
+    	.shopcar{
+    		background:none;
+    		width:80px;
+    	}
+    	.mydang a{
+			padding:0 25px 0 8px;
+			background: url(../img/head_sprite.png) no-repeat -5px -307px;
+    	}
+    }
+    .logoline{
+    	width:100%;
+    	.wrapper{
+    		margin:0 auto;
+    		width:$wrapper;
+    		overflow:hidden;
+    	}
+    	.wrapper>div{
+    		float:left;
+    	}
+    	.log{
+    		font-size:0;
+    	}
+    }
+    .searchbox{
+    	position:relative;
+    	margin-top:20px;
+    	width:566px;
+    	height:40px;
+    	border:2px solid #f00;
+    	form{
+    		display:inline-block;
+    	}
+    	input[type=text]{
+    		width:398px;
+    		height:22px;
+    		margin:8px 0px 8px 8px;
+    		border:none;
+    		font-size:12px;
+    	}
+    	.classify{
+    		position:absolute;
+    		left:410px;
+    		width:108px;
+    		height:40px;
+    		text-align:center;
+    		line-height:40px;
+    		color:#969696;
+    		font-size:16px;
+    		background:#f6f6f6;
+    		cursor:pointer;
+    	}
+    	.searchbtn{
+    		position:absolute;
+    		left:518px;
+    		width:48px;
+    		height:40px;
+    		// background:#f00;
+    		// border:none;
+    		cursor:pointer;
+    		span{
+    			position:absolute;
+    			width:48px;
+    			height:40px;
+    			left:-2px;
+    			top:-2px;
+    			background: url(../img/head_sprite.png) no-repeat 0px -346px;
+    		}
+    	}
+    }
+    .hot_search{
+    	margin-top:6px;
+    	width:200px;
+    	height:20px;
+    	background:#ff0;
+    }
+    .logoline_right{
+    	.car{
+    		margin:24px 0 0 70px;
+    		i{
+    			float:left;
+    			width:107px;
+    			height:38px;
+    			line-height:38px;
+    			color:#fff;
+    			background:#f00;
+    			border:1px solid #f00;
+    			border-right:none;
+    			cursor:pointer;
+    		}
+    		i:hover{
+    			color:#000;
+    			background:#f6f6f6;
+    			border-color:#ccc;
+    			span{
+    				background: url(../img/icon_cart.png) no-repeat 0px -40px;	
+    			}
+    		}
+    		i span{
+    			float:left;
+    			width:23px;
+    			height:27px;
+    			margin:2px 5px 0 15px;
+    			background: url(../img/icon_cart.png) no-repeat 0px -1px;  			
+    		}
+    		b{
+    			float:left;
+    			width:86px;
+    			height:38px;
+    			background:#f6f6f6;
+    			text-align:center;
+    			line-height:36px;
+    			border:1px solid #ccc;
+    			cursor:pointer;
+    		}
+    		b:hover{
+    			color:#f00;
+
+    		}
+    	}
+    }
+    .f_nav{
+    	border-bottom:3px solid #ff2832;
+    	.wrapper{
+    		margin:0 auto;
+    		width:$wrapper;
+    		font-size:14px;
+    	}
+    	ul{
+    		position:relative;
+    		overflow:hidden;
+    		li{
+    			float:left;
+    			padding:0 15px;
+    			height:40px;
+    			text-align:center;
+    			font-weight:bolder;
+    			line-height:40px;
+				a{
+					display:block;
+					height:40px;
+				}
+    			img{
+    				position:absolute;
+    				left:508px;
+    				top:-2px;
+    			}
+    		}
+    		.lists{
+    			width:165px;
+    			height:40px;
+    			margin-right:17px;
+    			text-align:left;
+    			background:#ff2832;
+    			padding-left:20px;
+    			a{
+    				display:block;
+					line-height:40px;
+					color:#fff;
+					background: url(../img/head_sprite.png) no-repeat 145px -567px;
+    			}
+    		}
+    	}
+    }
+}
