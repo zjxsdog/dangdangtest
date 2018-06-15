@@ -1,0 +1,263 @@
+body {
+    font: 14px "Microsoft YaHei";
+    background: #f6f9fb;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #f00;
+    text-decoration: underline;
+}
+
+.header {
+    font-size: 12px;
+    font-family: "\5b8b\4f53", Arial;
+    .wrapper {
+        width: 960px;
+        margin: 0 auto;
+        padding-top: 2px;
+        height: 71px;
+        color: #404040;
+        background: #fff url(../img/unite_header_bg_1101.gif) repeat-x 0 -148px;
+        .logo {
+            float: left;
+            a {
+                display: block;
+                font-size: 0;
+            }
+        }
+    }
+    .header_right {
+        float: right;
+        .header_nav {
+            overflow: hidden;
+        }
+    }
+    li {
+        float: left;
+        a {
+            display: block;
+            padding: 1px 6px 0;
+            height: 19px;
+            border: 1px solid #fff;
+            border-bottom: none;
+            line-height: 19px;
+        }
+    }
+    .cart {
+        padding-left: 14px;
+        background: url(../img/unite_header_1101.gif) no-repeat 0 -234px;
+    }
+    .nav_border {
+        height: 21px;
+        width: 1px;
+        background: url(../img/unite_header_bg_1101.gif) no-repeat 0 -102px;
+    }
+    p {
+        text-align: right;
+        margin: 3px 10px 0 0;
+        a {
+            margin-right: 5px;
+            color: #1a66b3;
+        }
+    }
+    .header_border {
+        float: left;
+        height: 3px;
+        background: #f07700;
+        width: 960px;
+    }
+}
+
+form {
+    .bd {
+        margin: 0 auto;
+        width: 960px;
+        padding-top: 40px;
+    }
+    .shadow_box {
+        background-color: #ebeeef;
+        width: 950px;
+        margin-bottom: 40px;
+        position: relative;
+    }
+    .register_box {
+        background: #fff;
+        position: relative;
+        top: -10px;
+        left: 10px;
+        width: 950px;
+    }
+    .register_head {
+        height: 74px;
+        border-bottom: solid 1px #eceef2;
+        padding-right: 15px;
+        margin: 0 10px;
+        span {
+            font-size: 12px;
+            float: right;
+            color: #646464;
+            line-height: 22px;
+            margin-top: 40px;
+            .home {
+                padding-left: 16px;
+                margin-right: 15px;
+                background: url(../img/icon_20150706.png) 0 2px no-repeat;
+            }
+            a {
+                color: #646464;
+            }
+        }
+        .register_title {
+            width: 135px;
+            height: 46px;
+            background: #fff;
+            position: absolute;
+            top: 28px;
+            left: 35px;
+            border: 1px solid #eceef2;
+            border-bottom: none;
+            font-size: 16px;
+            line-height: 46px;
+            text-align: center;
+            color: #464646;
+        }
+        .register_title:hover {
+            text-decoration: none;
+        }
+    }
+    .register_aside {
+        position: fixed;
+        top: 105px;
+        right: 118px;
+        a {
+            width: 34px;
+            height: 120px;
+            display: block;
+            background: url(../img/xiaodangdang.png) no-repeat;
+        }
+    }
+    .register_body {
+        padding: 45px 0 25px;
+        position: relative;
+        height: 499px;
+        .tip {
+            position: absolute;
+            top: 15px;
+            left: 50%;
+            margin-left: -347px;
+            padding-left: 22px;
+            width: 670px;
+            height: 22px;
+            line-height: 22px;
+            font-size: 12px;
+            color: #828282;
+            border: 1px solid #fedbd1;
+            background: #fef7f5 url(../img/new_tip.png) no-repeat 3px 5px;
+            a {
+                color: #1a66b3;
+            }
+        }
+    }
+    .register_name {
+        position: absolute;
+        left: 50%;
+        margin-left: -200px;
+        top: 50%;
+        margin-top: -200px;
+        li {
+            height: 68px;
+            text-align: right;
+            color: #646464;
+            width: 60px;
+        }
+    }
+    .register_message {
+        position: absolute;
+        left: 50%;
+        margin-left: -112px;
+        top: 77px;
+        li {
+            height: 68px;
+            position: relative;
+            .checkmessage {
+                font-size: 12px;
+                position: absolute;
+                bottom: 6px;
+                left: 12px;
+                color: #787878;
+            }
+        }
+        input {
+            border: 1px solid #e6e6e6;
+            height: 18px;
+            width: 290px;
+            margin-right: 10px;
+            padding: 9px 10px;
+            line-height: 18px;
+            outline: 0 none;
+            border-radius: 2px;
+        }
+        .tel_isright {
+            display:none;
+            position:absolute;
+            right:-16px;
+            top:12px;
+            width: 16px;
+            height: 16px;
+            background: url(../img/icon_20150706.png) 0 -40px no-repeat;
+        }
+        .pw_isright{
+            @extend .tel_isright;
+        }
+        .re_isright{
+            @extend .tel_isright;
+        }
+        .pw_level{
+            display:none;
+            width:22px;
+            height:10px;
+            background:#d6d6d6;
+        }
+        .level{
+            background:#f00;
+        }
+    }
+    .clause {
+        position: absolute;
+        left: 50%;
+        margin-left: -157px;
+        bottom: 250px;
+        font-size: 12px;
+        a {
+            color: #1a66b3;
+        }
+    }
+    .btn {
+        position: absolute;
+        left: 50%;
+        margin-left: -89px;
+        bottom: 150px;
+        .submit {
+            display: block;
+            font-size: 20px;
+            border: 0;
+            width: 178px;
+            height: 44px;
+            line-height: 44px;
+            cursor: pointer;
+            text-align: center;
+            background-color: #ff2832;
+            color: #fff;
+            border-radius: 22px;
+        }
+        .submit:hover {
+            text-decoration: none;
+            background: #f01923;
+        }
+    }
+}

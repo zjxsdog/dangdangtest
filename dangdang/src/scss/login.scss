@@ -1,0 +1,147 @@
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.login_header {
+    margin: 12px auto 14px;
+    width: 1200px;
+    height: 60px;
+    .logo {
+        display: inline-block;
+        margin-top: 7px;
+        a {
+            font-size: 0;
+            display: block;
+        }
+    }
+    .improve {
+        font-size: 12px;
+        float: right;
+        margin-top: 34px;
+        span {
+            float: left;
+            width: 15px;
+            height: 19px;
+            background: url(../img/improve.png) no-repeat 0 0;
+        }
+        a {
+            color: #787878;
+        }
+    }
+}
+
+.login_bg {
+    height: 590px;
+    .bg_pic {
+        width: 0px;
+        height: 0px;
+        position: absolute;
+        left: -620px;
+        top: 90px;
+        z-index: -1;
+    }
+    .clickarea {
+        display: block;
+        position: absolute;
+        left: 50px;
+        top: 180px;
+        width: 655px;
+        height: 415px;
+    }
+}
+@mixin _input($bgposition) {
+    position: relative;
+    height: 36px;
+    border: 1px solid #e6e6e6;
+    border-radius: 2px;
+    span {
+        width: 30px;
+        margin-right: 10px;
+        height: 36px;
+        float: left;
+        background: url(../img/icon_20150706.png) no-repeat;
+        background-position: $bgposition;
+    }
+    input {
+        float: left;
+        width: 270px;
+        height: 34px;
+        line-height: 34px;
+        border: 0;
+        color: #333;
+    }
+}
+.login_message {
+    background: #fff;
+    padding: 15px 25px 15px 15px;
+    float: right;
+    width: 320px;
+    color: #6e6e6e;
+    margin: 90px 32px;
+    position: relative;
+    border: 1px solid #eef2f4;
+    box-shadow: 0px 1px 2px #eee;
+    .login_top {
+        position: absolute;
+        width: 338px;
+        height: 24px;
+        border: 1px solid #fedbd1;
+        padding-left: 22px;
+        font-size: 12px;
+        color: #828282;
+        line-height: 24px;
+        top: -27px;
+        left: 0;
+        background: #fef7f5 url(../img/new_tip.png) no-repeat 3px 5px;
+        a {
+            color: #1a66b3;
+        }
+    }
+    .login_method {
+        margin-top: 5px;
+        font-size: 18px;
+        color: #3c3c3c;
+    }
+    .user {
+        @include _input(10px -110px);
+        margin-top: 20px;
+    }
+    .pw {
+        @include _input(10px -150px);
+    }
+    .checkmessage {
+        padding-left: 10px;
+        height: 30px;
+        line-height: 30px;
+    }
+    .clause {
+        font-size: 12px;
+        height: 27px;
+        line-height: 22px;
+        padding-top: 7px;
+        overflow: hidden;
+        a {
+            float: right;
+            color: #1a66b3;
+        }
+    }
+    .submit {
+        display: block;
+        height: 44px;
+        border-radius: 5px;
+        text-align: center;
+        font: normal 20px/44px "Microsoft Yahei";
+        background: #ff2832;
+        color: #fff;
+        cursor: pointer;
+    }
+    .submit:hover {
+        text-decoration: none;
+        background: #f01923;
+    }
+}

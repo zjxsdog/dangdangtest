@@ -1,0 +1,21 @@
+define(["jquery"],function(){
+	return{
+		nav:(function(){
+			$btn=$(".lists");
+			$secondnav=$(".second_nav");
+			$thirdmav=$(".third_nav");
+			$btn.hover(function(){
+				$secondnav.show();
+			},function(){
+				$secondnav.hide();
+			})
+			$secondnav.hover(function(){
+				$thirdmav.show();
+				$secondnav.show();
+			},function(){
+				$thirdmav.hide();
+				$secondnav.hide();
+			})
+		})()
+	}
+})

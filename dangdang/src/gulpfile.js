@@ -9,7 +9,6 @@ var concat=require("gulp-concat");//js代码合并
 var uglify=require("gulp-uglify");//js压缩插件
 var rename=require("gulp-rename");//重命名插件
 var imagemin=require("gulp-imagemin");//图片压缩插件
-
 //复制文件(目录拷贝)
 // gulp.task("copyhtml",function(){
 // 	gulp.src("*.html")
