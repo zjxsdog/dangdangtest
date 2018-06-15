@@ -5,7 +5,7 @@ $login_btn.on("click", function() {
     $.ajax({
         type: "POST",
         async: "true",
-        url: "http://localhost/dangdangtest/dangdang/php/login.php",
+        url: "../../php/data.php",
         data: {
             "tel": $tel.val(),
             "password": $password.val()

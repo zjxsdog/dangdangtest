@@ -37,6 +37,12 @@ define(["jquery"],function($) {
                 $(".noname").show();
                 $(".loginout").hide();
             })
+
+            var $areas=$(".area .pos");
+            var $area=$(".area ul li a");
+            $area.on("click",function(){
+                $areas.html($(this).html());
+            })
         })()
     }
 })

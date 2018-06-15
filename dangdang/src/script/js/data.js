@@ -22,7 +22,7 @@
 
 
     
-    $.getJSON("http://localhost/dangdangtest/dangdang/php/data.php", function(data) {
+    $.getJSON("../../php/data.php", function(data) {
 
         $html = "";
         $(data["index1"]).each(function(i) {

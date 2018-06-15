@@ -15,7 +15,7 @@
     $id = location.search.split("?")[1].split("&")[0].split("=")[1];
     $index=location.search.split("?")[1].split("&")[1].split("=")[1];
     $indexnum=$index.substr(5);
-    $.getJSON("http://localhost/dangdangtest/dangdang/php/data.php", function(data) {
+    $.getJSON("../../php/data.php", function(data) {
         var $html = "";
         var $html1 = $("#spic").html();
         $bf.html(`<img src=${data[$index][$id].url.split(",")[0]}></img>`)

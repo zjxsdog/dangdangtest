@@ -207,12 +207,16 @@ i {
       border: 1px solid #f00;
       border-right: none;
       cursor: pointer; }
+      .header .logoline_right .car i a {
+        color: #fff; }
     .header .logoline_right .car i:hover {
       color: #000;
       background: #f6f6f6;
       border-color: #ccc; }
       .header .logoline_right .car i:hover span {
         background: url(../img/icon_cart.png) no-repeat 0px -40px; }
+      .header .logoline_right .car i:hover a {
+        color: #f00; }
     .header .logoline_right .car i span {
       float: left;
       width: 23px;

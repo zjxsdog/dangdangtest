@@ -15,7 +15,7 @@ $(".loginout").on("click", function() {
     $(".shopping_total").hide();
 })
 
-$.getJSON("http://localhost/dangdangtest/dangdang/php/data.php", function(data) {
+$.getJSON("../../php/data.php", function(data) {
     $conmmend_list = $(".shopping_ads .show_box");
     var $html = "";
     $(data["index7"]).each(function(i) {
@@ -51,7 +51,7 @@ if (getCookie("tel")) {
             var id = Number(id);
             var number = getCookie("cartnum").split(",")[$i];
             $.ajax({
-                url: "http://localhost/dangdangtest/dangdang/php/data.php",
+                url: "../../php/data.php",
                 async: false,
                 dataType: "json"
             }).done(function(data) {
@@ -95,6 +95,7 @@ $(".shoppinglists").on("click", function(ev) {
     }
 
 })
+//按钮减少
 $(".shoppinglists").on("click", function(ev) {
     if ($(ev.target).attr("class") == "delnum") {
         var nownumber = Number($(ev.target).parent(".amount").find("input[type='text']").val());
@@ -148,19 +149,36 @@ $batchmove.on("click", function() {
     }
 })
 //总价
+
 function countmoney() {
     var shoppingtotal = $(".shopping_total .price");
     var allmoney = 0;
-    $money = $(".sumprice span");
+    //$money = $(".sumprice span");
+    $money = $("input:checked").parents(".list_content").find(".sumprice span")
     $money.each(function() {
         allmoney += +$(this).html();
     })
     shoppingtotal.html(allmoney.toFixed(2));
 };
+$("input[name='allpick']").on("click", function() {
+    if ($(this).is(":checked")) {
+        var shoppingtotal = $(".shopping_total .price");
+        var allmoney = 0;
+        //$money = $(".sumprice span");
+        $money = $(this).parents(".wrapper").find(".sumprice span");
+        $money.each(function() {
+            allmoney += +$(this).html();
+        })
+        shoppingtotal.html(allmoney.toFixed(2));
+    }else{
+        var shoppingtotal = $(".shopping_total .price");
+        shoppingtotal.html("0.00");
+    }
+
+})
 
 
-
-
+///推荐列表商品加入购物车
 var sidarr = [];
 var numarr = [];
 
@@ -202,7 +220,7 @@ $(".show_box").on("click", function(ev) {
             var id = Number(id);
             var number = getCookie("cartnum").split(",")[$i];
             $.ajax({
-                url: "http://localhost/dangdangtest/dangdang/php/data.php",
+                url: "../../php/data.php",
                 async: false,
                 dataType: "json"
             }).done(function(data) {

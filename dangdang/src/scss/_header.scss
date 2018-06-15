@@ -253,13 +253,20 @@ i {
                 border: 1px solid #f00;
                 border-right: none;
                 cursor: pointer;
+                a{
+                    color:#fff;
+                }
             }
+
             i:hover {
                 color: #000;
                 background: #f6f6f6;
                 border-color: #ccc;
                 span {
                     background: url(../img/icon_cart.png) no-repeat 0px -40px;
+                }
+                a{
+                    color:#f00;
                 }
             }
             i span {

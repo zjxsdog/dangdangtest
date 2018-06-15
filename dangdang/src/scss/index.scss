@@ -1,5 +1,9 @@
 @charset "utf-8";
 @import "header";
+//混合写箭头样式
+//$l_left:右箭头的left值
+//$l_top：箭头的top值
+//$position：箭头的背景图定位
 @mixin _jt($l_left, $l_top, $position) {
     //幻灯片的箭头样式
     position: absolute;
@@ -16,6 +20,8 @@
 }
 
 //轮播图样式用sass混合
+//$picWidth，$picHeight:图片宽度，图片高度
+//$btnMarginL：按钮的左margin值
 @mixin main_content_lb($picWidth, $picHeight, $l_left, $l_top, $btnMarginL) {
     position: relative;
     .pic {
@@ -54,6 +60,7 @@
 }
 
 //幻灯片样式用sass混合
+//$btnMarginL：按钮右margin值
 @mixin main_content_ppt( $l_left, $l_top, $btnMarginL) {
     position: relative;
     overflow: hidden;
@@ -784,7 +791,10 @@
     }
 }
 
-
+//图书区域和衣服区域的盒子样式用混合写
+//$boxsWidth:盒子宽度
+//imgHeight:盒子中轮播图的高度
+//tabPstop:tab区域的top值
 @mixin bookAndclothes_box($boxsWidth,
 $imgHeight,
 $tabPstop,

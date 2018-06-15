@@ -24,7 +24,7 @@ $tel.on("blur", function() {
             $tel_checkmessage.html("").css({ "color": "#787878" });
             $.ajax({
                 type: "POST",
-                url: "http://localhost/dangdangtest/dangdang/php/register.php",
+                url: "../../php/data.php",
                 async: "true",
                 data: "tel=" + $tel.val()
             }).done(function(data) {
